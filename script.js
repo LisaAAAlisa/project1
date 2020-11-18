@@ -10,7 +10,7 @@
         //console.log to see the outcome
         // locally store data
 
-window.fx.settings = { from: "USD"};
+// window.fx.settings = { from: "USD"};
 
 
         //     var queryURL = "http://api.currencylayer.com/live?access_key=7c8ce31c312ebeee8c5489c55a4939fd"
