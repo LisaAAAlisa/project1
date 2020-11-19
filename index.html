@@ -2,98 +2,53 @@
 <html lang="en">
 
 <head>
-  <!-- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-</head>
-
-<body>
-
-
-    <div class="card">
-        <div class="card-header">
-            <strong>
-                <i class="fa fa-list-alt"></i> Search Parameters</strong>
-        </div>
-        <div class="card-body">
-
-            
-            <form role="form">
- -->
-
-
-
-  <!-- <div class="form-group">
-                    <label for="search">Amount to be exchanged:</label>
-                    <input id="search-exchange" class="custom-select" aria-labelledby="dropdownMenuButton" type="number" valu=1>
-                        
-                        
-                    </select>
-                </div> -->
-
-
-  <!-- <div class="form-group">
-                    <label for="search">Response</label>
-                    <input type="text" class="form-control" id="response">
-                </div> -->
-
-
-  <!-- <div class="form-group">
-                    <label for="end-year">convertedFrom:</label>
-                    <select type="text" class="form-control" id="convertedFrom"></select>
-                </div>
-
-
-                
-                <div class="form-group">
-                    <label for="start-year">convertedTo :</label>
-                    <select type="text" class="form-control" id="convertedTo"></select>
-                </div>
-
-               
-
-
-                <script src="https://code.jquery.com/jquery.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/money.js/0.0.1/money.min.js"></script>
-
-                
-                <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-                    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-                <script src="script.js"></script>
-</body>
-
-</html> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Currency converter</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    #convertedFrom,
-    #convertedTo {
+    #search-exchange,
+    #output {
       width: 200px;
-      margin-left: -300px;
+      margin-left: -17px;
+    }
+
+    #convertedTo,
+    #convertedFrom {
+      margin-left: 260px;
     }
 
     .texas-center {
       background-color: #D7ECFA;
     }
+
+    .cell.medium-6 {
+      margin-left: 60px;
+    }
+
+    .current-date {
+      margin-left: 85px;
+    }
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 7;
+}
   </style>
 </head>
 
 <body>
-
   <div class="callout large primary">
     <div class="text-center">
       <h1>Currency Exchange</h1>
     </div>
   </div>
   <div class="container">
-
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
         <div class="cell medium-6 large-offset-3">
@@ -118,25 +73,35 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="grid-x grid-margin-x">
-    <div class="cell medium-6">
-      <div class="card" style="width: 300px;">
-        <div class="card-divider">
-          This is a header
-        </div>
+    <br><br>
+    <div class="grid-x grid-margin-x">
+      <div class="cell medium-6">
         <div class="card" style="width: 300px;">
-          <div class="card-divider">
-            This is a header
+          <div class="current-date">
+            DATE:
           </div>
-          <div class="card" style="width: 300px;">
-            <div class="card-divider">
-              This is a header
+          <div class="grid-x grid-margin-x">
+            <div class="cell medium-6">
+              <div class="card" style="width: 300px;">
+                <div class="AUD">
+                </div>
+                <div class="card" style="width: 300px;">
+                  <div class="USD">
+                  </div>
+                  <div class="card" style="width: 300px;">
+                    <div class="CAD">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
-
+        <footer class="footer mt-auto py-3">
+          <div class="container">
+            <span class="text-muted">Team Jon Snow</span>
+          </div>
+        </footer>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
           integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
