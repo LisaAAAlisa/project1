@@ -38,6 +38,10 @@
       margin-left: 85px;
     }
 
+    .boxybox {
+      position: relative;
+      ;    }
+
     .AUD, .USD, .CAD {
       margin-left: 48px;
       border-radius: 5px;
@@ -95,38 +99,39 @@
       </div>
     </div>
     <br><br>
-  <div class="grid-x grid-margin-x">
+  <div class="grid-x grid-margin-x boxybox">
     <div class="cell medium-6">
       <div class="card" style="width: 300px;border-radius: 5px; margin-left: 1350px;">
         <div class="current-date">
           DATE:
         </div>
-  <div class="grid-x grid-margin-x">
+  <div class="grid-x grid-margin-x boxybox">
     <div class="cell medium-6">
       <div class="card" style="width: 205px; border-radius: 3px;">
         <div class="AUD">
-          This is a header
         </div>
         <div class="card" style="width: 205px; border-radius: 3px;">
           <div class="USD">
-            This is a header
           </div>
           <div class="card" style="width: 205px; border-radius: 3px;">
             <div class="CAD">
-              This is a header
             </div>
           </div>
         </div>
       </div>
+</div></div>
+      <canvas id="myChart" width="400" height="400"></canvas>
       <footer class="footer mt-auto py-3">
         <div class="container">
         <span class="text-muted">Team Jon Snow</span>
         </div>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
           integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+  <script type="text/javascript" src="chart.js"></script>
   </body>
 </html>
 

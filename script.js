@@ -90,3 +90,4 @@ $.ajax({
     USD.html("USD: " + "<i class='fa fa-dollar'></i>" + currencies.rates.USD.toFixed(2));
     CAD.html("CAD: " + "<i class='fa fa-dollar'></i>" + currencies.rates.CAD.toFixed(2));
 });
+
