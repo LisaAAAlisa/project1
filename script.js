@@ -1,6 +1,6 @@
 //setting up ajax request to get a list of currencies from API
 $.ajax({
-    url: "http://api.currencylayer.com/list?access_key=7c8ce31c312ebeee8c5489c55a4939fd"
+    url: "https://api.currencylayer.com/list?access_key=7c8ce31c312ebeee8c5489c55a4939fd"
 }).then(function (from) {
     console.log(from)
     searchCurrencyURL(from);
@@ -30,7 +30,7 @@ function getExchange() {
     var to = $("#convertedTo").val();
     console.log(amount, from, to)
 
-    var convert = "http://api.currencylayer.com/convert?access_key=7c8ce31c312ebeee8c5489c55a4939fd&from=" + from + "&to=" + to + "&amount=" + amount + "&format=1"
+    var convert = "https://api.currencylayer.com/convert?access_key=7c8ce31c312ebeee8c5489c55a4939fd&from=" + from + "&to=" + to + "&amount=" + amount + "&format=1"
 //setting up ajax call to get a response for the currency conccecrsions
     $.ajax({
         url: convert,
