@@ -42,12 +42,25 @@
       margin-left: 48px;
       border-radius: 5px;
     }
+
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 7;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+  
   </style>
 </head>
 <body>
   <div class="callout large primary">
     <div class="text-center">
-      <h1>Currency Exchange</h1>
+      <h1>Currency converter</h1>
     </div>
   </div>
   <div class="container">
@@ -99,11 +112,16 @@
           </div>
         </div>
       </div>
+      <footer class="footer mt-auto py-3">
+        <div class="container">
+        <span class="text-muted">Team Jon Snow</span>
+        </div>
+      </footer>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
           integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
-</body>
+  </body>
 </html>
 
 
