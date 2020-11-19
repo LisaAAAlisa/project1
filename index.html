@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currency converter</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    body{
+      background-image: url(https://c0.wallpaperflare.com/preview/1017/538/491/money-finance-bank-cash.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+      
     #search-exchange,
     #output {
       width: 200px;
-      margin-left: -17px;
+      margin-left: -48px;
+      border-radius: 5px;
     }
 
-    #convertedTo,
-    #convertedFrom {
-      margin-left: 260px;
+    #convertedTo, #convertedFrom {
+      margin-left: 332px;
+      border-radius: 5px;
     }
-
     .texas-center {
       background-color: #D7ECFA;
     }
@@ -31,17 +37,13 @@
     .current-date {
       margin-left: 85px;
     }
-    .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    opacity: 7;
-}
+
+    .AUD, .USD, .CAD {
+      margin-left: 48px;
+      border-radius: 5px;
+    }
   </style>
 </head>
-
 <body>
   <div class="callout large primary">
     <div class="text-center">
@@ -59,7 +61,6 @@
         </div>
         <div class="cell medium-2">
           <input type="text" value="1" id="search-exchange">
-
         </div>
       </div>
       <div class="grid-x grid-margin-x">
@@ -70,46 +71,42 @@
           </div>
         </div>
         <div class="cell medium-2">
-
           <input type="text" value="" id="output" disabled>
-
-
         </div>
       </div>
     </div>
     <br><br>
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-6">
-        <div class="card" style="width: 300px;">
-          <div class="current-date">
-            DATE:
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-6">
+      <div class="card" style="width: 300px;border-radius: 5px; margin-left: 1350px;">
+        <div class="current-date">
+          DATE:
+        </div>
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-6">
+      <div class="card" style="width: 205px; border-radius: 3px;">
+        <div class="AUD">
+          This is a header
+        </div>
+        <div class="card" style="width: 205px; border-radius: 3px;">
+          <div class="USD">
+            This is a header
           </div>
-          <div class="grid-x grid-margin-x">
-            <div class="cell medium-6">
-              <div class="card" style="width: 300px;">
-                <div class="AUD">
-                </div>
-                <div class="card" style="width: 300px;">
-                  <div class="USD">
-                  </div>
-                  <div class="card" style="width: 300px;">
-                    <div class="CAD">
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="card" style="width: 205px; border-radius: 3px;">
+            <div class="CAD">
+              This is a header
             </div>
           </div>
         </div>
-        <footer class="footer mt-auto py-3">
-          <div class="container">
-            <span class="text-muted">Team Jon Snow</span>
-          </div>
-        </footer>
+      </div>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
           integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
 </body>
-
 </html>
+
+
+
+
+

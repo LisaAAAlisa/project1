@@ -21,7 +21,6 @@ function searchCurrencyURL(response) {
         op1.val(property);
         $("#convertedFrom").append(op)
         $("#convertedTo").append(op1)
-
     }
 }
 //function that converts currencies using API
